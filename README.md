@@ -7,8 +7,13 @@
 *   **Key takeaways/results:** This project developed and compared a Decision Tree and a Random Forest model for loan repayment prediction. The Random Forest model showed higher overall accuracy (0.85) compared to the Decision Tree (0.76), although the Decision Tree had better recall and F1-score for the minority class (not fully paid).
 
 ### 2. Dataset
+## Data Source
 
-*   **Source:** The data is publicly available data from LendingClub.com. It's provided as a CSV file named `loans.csv`. The specific source link was not provided in the notebook, but the data is described as being from 2007-2010.
+The primary dataset (350 MB) used for this analysis is hosted externally on Kaggle to maintain repository efficiency.
+
+* **Kaggle Dataset Link:** [Lending Club Loan Data](https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv)
+
+*   **Source:** The data is publicly available data from LendingClub.com.  The specific source link was not provided in the notebook, but the data is described as being from 2007-2010.
 *   **Description:** The dataset contains information about loans and borrowers from Lending Club. After dropping rows with missing values, it includes 9513 entries and 15 columns. Key variables include `credit.policy`, `purpose`, `int.rate`, `installment`, `log.annual.inc`, `dti`, `days.with.cr.line`, `revol.bal`, `revol.util`, `inq.last.6mths`, `delinq.2yrs`, `pub.rec`, `fico`, and the target variable `not.fully.paid`. There is also a `customer.id` column.
 *   **Preprocessing:** Several preprocessing steps were performed:
     *   Handling missing values by dropping rows with `dropna()`.
